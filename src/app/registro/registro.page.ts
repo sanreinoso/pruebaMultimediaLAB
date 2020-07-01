@@ -60,7 +60,7 @@ export class RegistroPage implements OnInit {
           this.presentToast("CREADO CON EXITO")
           this.router.navigate(["/login"]);
         }).catch(err => reject(err));
-        this.toastErr("YA EXISTE UN USUARIO CON ESTE EMAIL")
+        //this.toastErr("YA EXISTE UN USUARIO CON ESTE EMAIL")
       })
       }else{
         this.toastErr("CONTRASEÑA NO COINCIDEN")
